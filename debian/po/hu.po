@@ -1,15 +1,35 @@
+# THIS FILE IS GENERATED AUTOMATICALLY FROM THE D-I PO MASTER FILES
+# The master files can be found under packages/po/
+#
+# DO NOT MODIFY THIS FILE DIRECTLY: SUCH CHANGES WILL BE LOST
+#
 # Hungarian messages for debian-installer.
 # Copyright (C) 2003 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 # coor: SZERVÁC Attila - sas 321hu -- 2006-2008
 #
+#
+# Translations from iso-codes:
+#   Tobias Quathamer <toddy@debian.org>, 2007.
+#     Translations taken from ICU SVN on 2007-09-09
+#
+#   Arpad Biro <biro_arpad@yahoo.com>, 2001.
+#   VERÓK István <vi@fsf.hu>, 2004.
+#   SZERVÁC Attila <sas@321.hu>, 2006.
+#   Kálmán Kéménczy <kkemenczy@novell.com>, 2007, 2008.
+#   Gabor Kelemen <kelemeng@gnome.hu>, 2006, 2007.
+#   Kalman Kemenczy <kkemenczy@gmail.com>, 2010.
+#   Andras TIMAR <timar@gnome.hu>, 2000-2001.
+# SZERVÁC Attila <sas@321.hu>, 2012.
+# Dr. Nagy Elemér Károly <eknagy@omikk.bme.hu>, 2012.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2010-11-16 00:58+0100\n"
-"PO-Revision-Date: 2010-11-17 10:12+0100\n"
-"Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
+"POT-Creation-Date: 2012-02-23 17:33+0000\n"
+"PO-Revision-Date: 2012-11-29 19:23+0100\n"
+"Last-Translator: Dr. Nagy Elemér Károly <eknagy@omikk.bme.hu>\n"
 "Language-Team: Debian L10n Hungarian <debian-l10n-hungarian@lists.debian."
 "org>\n"
 "Language: \n"
@@ -17,160 +37,180 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n>1;\n"
-"X-Poedit-Country: HUNGARY\n"
-"X-Poedit-Language: Hungarian\n"
 
 #. Type: text
 #. Description
-#. :sl2:
+#. :sl3:
 #: ../console-setup.templates:2001
 msgid "Do not change the boot/kernel font"
-msgstr "Ne módosítsd a boot/kernel betűt"
+msgstr "Ne módosítsd a boot/kernel betűtípust"
+
+#. Type: text
+#. Description
+#. :sl3:
+#: ../console-setup.templates:3001
+msgid "Let the system select a suitable font"
+msgstr "Válassza a rendszer a megfelelő betűt"
+
+#. Type: text
+#. Description
+#. Used in the font size question like this: "12x24, framebuffer only"
+#. :sl3:
+#: ../console-setup.templates:4001
+msgid "framebuffer only"
+msgstr "csak keretpuffer"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Arabic"
 msgstr ". Arab"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Armenian"
 msgstr "# Örmény"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - KOI8-R and KOI8-U"
 msgstr "# Cirill- KOI8-R és KOI8-U"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - non-Slavic languages"
 msgstr "# Cirill - nem-szláv nyelvek"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Cyrillic - Slavic languages (also Bosnian and Serbian Latin)"
 msgstr "# Cirill - szláv nyelvek (bosnyák és szerb latin is)"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Ethiopic"
 msgstr ". Etióp"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Georgian"
 msgstr "# Grúz"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Greek"
 msgstr "# Görög"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Hebrew"
 msgstr "# Héber"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Lao"
 msgstr "# Lao"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin1 and Latin5 - western Europe and Turkic languages"
 msgstr "# Latin1 és Latin5 - nyugat-európai és török nyelvek"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin2 - central Europe and Romanian"
 msgstr "# Latin2 - Közép-Európa és Román"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin3 and Latin8 - Chichewa; Esperanto; Irish; Maltese and Welsh"
 msgstr "# Latin3 and Latin8 - csicseva; eszperantó; ír; máltai és velszi"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Latin7 - Lithuanian; Latvian; Maori and Marshallese"
 msgstr "# Latin7 - Litván; Lett; Maori és Marshall-szigeteki"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Latin - Vietnamese"
 msgstr ". Latin - Vietnámi"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid "# Thai"
 msgstr "# Thai"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
 msgstr ". Kombinált - latin; szláv cirill; héber; alap arab"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Greek"
 msgstr ". Kombinált - latin; szláv cirill; görög"
 
 #. Type: select
 #. Choices
 #. :sl3:
-#: ../console-setup.templates:3001
+#: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic and non-Slavic Cyrillic"
 msgstr ". Kombinált - latin; szláv és nem-szláv cirill"
 
 #. Type: select
+#. Choices
+#. :sl3:
+#: ../console-setup.templates:5001
+msgid "Guess optimal character set"
+msgstr "Optimális karakterkészlet kitalálása"
+
+#. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:3002
+#: ../console-setup.templates:5002
 msgid "Character set to support:"
 msgstr "Támogatandó karakterkészlet:"
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:3002
+#: ../console-setup.templates:5002
 msgid ""
 "Please choose the character set that should be supported by the console font."
 msgstr "Kérlek, jelöld ki a konzol font által támogatandó karakterkészletet."
@@ -178,7 +218,7 @@ msgstr "Kérlek, jelöld ki a konzol font által támogatandó karakterkészlete
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:3002
+#: ../console-setup.templates:5002
 msgid ""
 "If you don't use a framebuffer, the choices that start with \".\" will "
 "reduce the number of available colors on the console."
@@ -191,8 +231,8 @@ msgstr ""
 #. The languages with many non-ASCII letters should not use formatted
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
-#. :sl2:
-#: ../console-setup.templates:4001
+#. :sl3:
+#: ../console-setup.templates:6001
 msgid "Font for the console:"
 msgstr "Betű a konzolhoz:"
 
@@ -201,8 +241,8 @@ msgstr "Betű a konzolhoz:"
 #. The languages with many non-ASCII letters should not use formatted
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
-#. :sl2:
-#: ../console-setup.templates:4001
+#. :sl3:
+#: ../console-setup.templates:6001
 msgid ""
 "\"VGA\" has a traditional appearance and has medium coverage of "
 "international scripts. \"Fixed\" has a simplistic appearance and has better "
@@ -220,8 +260,8 @@ msgstr ""
 #. The languages with many non-ASCII letters should not use formatted
 #. lists.  If you decide to use formatted lists then keep the lines
 #. relatively short.
-#. :sl2:
-#: ../console-setup.templates:4001
+#. :sl3:
+#: ../console-setup.templates:6001
 msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
 "TerminusBold (if you use a framebuffer) or TerminusBoldVGA (otherwise)."
@@ -231,59 +271,42 @@ msgstr ""
 
 #. Type: select
 #. Description
-#. :sl2:
+#. :sl3:
 #. Type: select
 #. Description
-#. :sl2:
-#: ../console-setup.templates:5001 ../console-setup.templates:6001
+#. :sl3:
+#: ../console-setup.templates:7001 ../console-setup.templates:8001
 msgid "Font size:"
 msgstr "Betűméret:"
 
 #. Type: select
 #. Description
-#. :sl2:
-#: ../console-setup.templates:5001
+#. :sl3:
+#: ../console-setup.templates:7001
 msgid ""
-"Please select the size of the font for the Linux console. For reference, the "
-"font used when the computer boots has size 16."
+"Please select the size of the font for the console. For reference, the font "
+"used when the computer boots has size 8x16."
 msgstr ""
-"Kérlek, válaszd ki a Linux konzol betűméretét. Összehasonlításképp: a gép "
-"indulásakor ez 16."
-
-#. Type: select
-#. Description
-#. :sl2:
-#: ../console-setup.templates:6001
-msgid ""
-"Please select the size of the font for the Linux console. Simple integers "
-"corresponding to fonts can be used with all console drivers. The number then "
-"represents the font height (number of scan lines). Alternatively, the font "
-"may be represented as HEIGHTxWIDTH; however, such font specifications "
-"require the kbd console package (not console-tools) plus framebuffer (and "
-"the RadeonFB kernel driver for framebuffer does not support them either)."
-msgstr ""
-"Kérlek, válaszd ki a Linux konzol betűméretét. Egyszerű egész számok minden "
-"konzol meghajtóhoz használhatók. A szám a magasságot adja (elfoglalt "
-"sorokban). A font MAGASSÁGxSZÉLESSÉG formában is megadható; de ez már a kbd "
-"(és nem a console-tools) csomagot és framebuffert igényel (a RadeonFB kernel "
-"meghajtó például nem is támogatja)."
-
-#. Type: select
-#. Description
-#. :sl2:
-#: ../console-setup.templates:6001
-msgid ""
-"Font heights can be useful for figuring out the real size of the symbols on "
-"the console. For reference, the font used when the computer boots has size "
-"16."
-msgstr ""
-"A betűmagasságokkal kitalálható a jelek valódi mérete a konzolon. "
-"Összehasonlításképp: a gép indulásakor használt betűméret: 16."
+"Kérlek, válaszd ki a konzol betűméretét. Összehasonlításképp: a gép "
+"indulásakor ez 8x16."
 
 #. Type: select
 #. Description
 #. :sl3:
-#: ../console-setup.templates:7001
+#: ../console-setup.templates:8001
+msgid ""
+"Please select the size of the font for the console.  For reference, the font "
+"used when the computer boots has size 8x16.  Some font sizes require the kbd "
+"console package (not console-tools) plus framebuffer."
+msgstr ""
+"Kérlek, válaszd ki a konzol betűméretét. Összehasonlításképp: a gép "
+"indulásakor ez 8x16. Egyes fontméretek a kbd konzol csomagot igénylik (nem a "
+"console-tools-t) és keretpuffert."
+
+#. Type: select
+#. Description
+#. :sl3:
+#: ../console-setup.templates:9001
 msgid "Encoding to use on the console:"
 msgstr "A konzolon használt kódolás:"
 
@@ -856,8 +879,38 @@ msgstr "amerikai angol"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Albanian"
+msgstr "Albán"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Arabic"
+msgstr "Arab"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Asturian"
+msgstr "Asztúriai"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Bangladesh"
+msgstr "Banglades"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Belarusian"
 msgstr "belorusz"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Bengali"
+msgstr "Bengáli"
 
 #. Type: select
 #. Choices
@@ -868,14 +921,14 @@ msgstr "belga"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Brazilian (ABNT2 layout)"
-msgstr "brazil (abnt2)"
+msgid "Bosnian"
+msgstr "Bosnyák"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Brazilian (EUA layout)"
-msgstr "brazil (latin1)"
+msgid "Brazilian"
+msgstr "brazil"
 
 #. Type: select
 #. Choices
@@ -910,6 +963,18 @@ msgstr "Kanadai többnyelvű"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Catalan"
+msgstr "Katalán"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Chinese"
+msgstr "Kínai"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Croatian"
 msgstr "horvát"
 
@@ -940,8 +1005,26 @@ msgstr "Dvorak"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Dzongkha"
+msgstr "Dzongkha"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Esperanto"
+msgstr "Eszperantó"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Estonian"
 msgstr "észt"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Ethiopian"
+msgstr "Etióp"
 
 #. Type: select
 #. Choices
@@ -958,6 +1041,12 @@ msgstr "francia"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Georgian"
+msgstr "Grúz"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "German"
 msgstr "német"
 
@@ -970,8 +1059,26 @@ msgstr "görög"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Gujarati"
+msgstr "Gudzsaráti"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Gurmukhi"
+msgstr "Gurmuki"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Hebrew"
 msgstr "héber"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Hindi"
+msgstr "Hindi"
 
 #. Type: select
 #. Choices
@@ -988,6 +1095,12 @@ msgstr "izlandi"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Irish"
+msgstr "Ír"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Italian"
 msgstr "olasz"
 
@@ -1000,8 +1113,50 @@ msgstr "japán"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Kannada"
+msgstr "Kannada"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Kazakh"
+msgstr "Kazak"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Khmer"
+msgstr "Khmer"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Kirghiz"
 msgstr "kirgiz"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Korean"
+msgstr "Koreai"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Kurdish (F layout)"
+msgstr "Kurd (F kiosztású)"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Kurdish (Q layout)"
+msgstr "Kurd (Q kiosztású)"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Lao"
+msgstr "Lao"
 
 #. Type: select
 #. Choices
@@ -1030,8 +1185,32 @@ msgstr "macedón"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Malayalam"
+msgstr "Malajálam"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Nepali"
+msgstr "Nepáli"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Northern Sami"
+msgstr "Északi Számi"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Norwegian"
 msgstr "norvég"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Persian"
+msgstr "Perzsa"
 
 #. Type: select
 #. Choices
@@ -1044,6 +1223,12 @@ msgstr "lengyel"
 #: ../keyboard-configuration.templates:16001
 msgid "Portuguese"
 msgstr "portugál"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Punjabi"
+msgstr "Pándzsábi"
 
 #. Type: select
 #. Choices
@@ -1066,14 +1251,26 @@ msgstr "szerb (cirill)"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Slovakian"
-msgstr "szlovák"
+msgid "Sindhi"
+msgstr "Sindi"
 
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
-msgid "Slovene"
-msgstr "szlovén"
+msgid "Sinhala"
+msgstr "Sinhala"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Slovak"
+msgstr "Szlovák"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Slovenian"
+msgstr "Szlovén"
 
 #. Type: select
 #. Choices
@@ -1102,6 +1299,18 @@ msgstr "svájci német"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Tamil"
+msgstr "Tamil"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Telugu"
+msgstr "Telugu"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Thai"
 msgstr "Thai"
 
@@ -1122,6 +1331,18 @@ msgstr "török (Q kiosztású)"
 #: ../keyboard-configuration.templates:16001
 msgid "Ukrainian"
 msgstr "ukrán"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Uyghur"
+msgstr "Ujgur"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Vietnamese"
+msgstr "Vietnami"
 
 #. Type: select
 #. Description

@@ -1,6 +1,6 @@
 Everything in this binary package is
 
-Copyright (C) 2006 Anton Zinoviev <zinoviev@debian.org>
+Copyright (C) 2006,2009,2010,2011 Anton Zinoviev <zinoviev@debian.org>
 Contains code from the bdftopsf.pl utility (Terminus font suite)
 Copyright (C) 2004 Dimitar Toshkov Zhekov
 
@@ -25,8 +25,3 @@ The source package of this binary package is console-setup.  The
 source package contains files that have different copyright from the
 cited here but these files are not related to the contents of bdf2psf
 in any way.
-
-The source code is hosted on svn.debian.org and can be downloaded by
-the following command:
-
-svn co svn://svn.debian.org/d-i/trunk/packages/console-setup

@@ -1,6 +1,10 @@
 SHELL = /bin/sh
 
-build : gziped_good_psf_fonts
+build : build-linux build-freebsd
+build-linux : gzipped_good_psf_fonts build-any
+build-freebsd : uuencoded_good_raw_fonts scrnmaps terminfo termcap build-any
+build-any:
+
 
 %.gz : %
 	gzip -9 <$< >$@
@@ -109,42 +113,42 @@ VGA28x16-CODESETS = $(VGA14-CODESETS)
 VGA32x16-CODESETS = $(VGA16-CODESETS)
 
 Arabic-legacy14-BDFS = legacy14i.bdf+legacy14f.bdf+legacy14l.bdf+legacy14b.bdf
-Arabic-legacy16-BDFS = arabic_vga.bdf+u_vga16.bdf+legacy16c.bdf+legacy16f.bdf+legacy16k.bdf
+Arabic-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16c.bdf+legacy16f.bdf+legacy16k.bdf
 Arabic-legacy8-BDFS = legacy8f.bdf+legacy8d.bdf+legacy8i.bdf+legacy8b.bdf
 CyrKoi-legacy14-BDFS = legacy14b.bdf+legacy14a.bdf+legacy14c.bdf+legacy14g.bdf
-CyrKoi-legacy16-BDFS = u_vga16.bdf+legacy16b.bdf+legacy16a.bdf
+CyrKoi-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16b.bdf+legacy16a.bdf
 CyrKoi-legacy8-BDFS = legacy8b.bdf+legacy8a.bdf
 CyrSlav-legacy14-BDFS = legacy14a.bdf+legacy14l.bdf+legacy14c.bdf+legacy14e.bdf+legacy14i.bdf
-CyrSlav-legacy16-BDFS = u_vga16.bdf+legacy16a.bdf+legacy16k.bdf+legacy16c.bdf+legacy16b.bdf
+CyrSlav-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16a.bdf+legacy16k.bdf+legacy16c.bdf+legacy16b.bdf
 CyrSlav-legacy8-BDFS = legacy8a.bdf+legacy8i.bdf+legacy8b.bdf+legacy8c.bdf+legacy8f.bdf
 Greek-legacy14-BDFS = legacy14g.bdf+legacy14l.bdf+legacy14b.bdf+legacy14i.bdf
-Greek-legacy16-BDFS = u_vga16.bdf+legacy16a.bdf+legacy16k.bdf+legacy16c.bdf
+Greek-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16a.bdf+legacy16k.bdf+legacy16c.bdf
 Greek-legacy8-BDFS = legacy8a.bdf+legacy8i.bdf+legacy8b.bdf+legacy8f.bdf
 Hebrew-legacy14-BDFS = legacy14h.bdf+legacy14l.bdf+legacy14i.bdf+legacy14b.bdf
-Hebrew-legacy16-BDFS = u_vga16.bdf+legacy16g.bdf+legacy16k.bdf+legacy16c.bdf
+Hebrew-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16g.bdf+legacy16k.bdf+legacy16c.bdf
 Hebrew-legacy8-BDFS = legacy8e.bdf+legacy8i.bdf+legacy8f.bdf+legacy8b.bdf
 Lat15-legacy10-BDFS = legacy10b.bdf+legacy10a.bdf+legacy10d.bdf
 Lat15-legacy12-BDFS = legacy12a.bdf+legacy12d.bdf+legacy12c.bdf
 Lat15-legacy14-BDFS = legacy14i.bdf+legacy14l.bdf+legacy14a.bdf+legacy14b.bdf
-Lat15-legacy16-BDFS = u_vga16.bdf+legacy16c.bdf+legacy16k.bdf+legacy16a.bdf
+Lat15-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16c.bdf+legacy16k.bdf+legacy16a.bdf
 Lat15-legacy19-BDFS = legacy19a.bdf
 Lat15-legacy8-BDFS = legacy8a.bdf+legacy8i.bdf+legacy8b.bdf+legacy8f.bdf
 Lat2-legacy10-BDFS = legacy10d.bdf+legacy10a.bdf+legacy10b.bdf
 Lat2-legacy12-BDFS = legacy12c.bdf+legacy12d.bdf+legacy12a.bdf
 Lat2-legacy14-BDFS = legacy14k.bdf+legacy14l.bdf+legacy14i.bdf+legacy14b.bdf
-Lat2-legacy16-BDFS = u_vga16.bdf+legacy16c.bdf+legacy16k.bdf
+Lat2-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16c.bdf+legacy16k.bdf
 Lat2-legacy8-BDFS = legacy8f.bdf+legacy8i.bdf+legacy8b.bdf
 Lat38-legacy14-BDFS = legacy14e.bdf+legacy14i.bdf+legacy14b.bdf
-Lat38-legacy16-BDFS = u_vga16.bdf+legacy16e.bdf+legacy16h.bdf+legacy16a.bdf
+Lat38-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16e.bdf+legacy16h.bdf+legacy16a.bdf
 Lat38-legacy8-BDFS = legacy8c.bdf+legacy8f.bdf+legacy8b.bdf
 Lat7-legacy14-BDFS = legacy14l.bdf+legacy14e.bdf+legacy14i.bdf+legacy14b.bdf
-Lat7-legacy16-BDFS = u_vga16.bdf+legacy16e.bdf+legacy16k.bdf+legacy16c.bdf
+Lat7-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16e.bdf+legacy16k.bdf+legacy16c.bdf
 Lat7-legacy8-BDFS = legacy8i.bdf+legacy8c.bdf+legacy8f.bdf+legacy8b.bdf
 Uni1-legacy14-BDFS = legacy14a.bdf+legacy14e.bdf+legacy14f.bdf+legacy14l.bdf+legacy14h.bdf+legacy14c.bdf
-Uni1-legacy16-BDFS = arabic_vga.bdf+u_vga16.bdf+legacy16e.bdf+legacy16a.bdf+legacy16f.bdf+legacy16g.bdf+legacy16k.bdf+legacy16b.bdf
+Uni1-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16e.bdf+legacy16a.bdf+legacy16f.bdf+legacy16g.bdf+legacy16k.bdf+legacy16b.bdf
 Uni1-legacy8-BDFS = legacy8a.bdf+legacy8c.bdf+legacy8d.bdf+legacy8i.bdf+legacy8e.bdf+legacy8b.bdf
 Uni2-legacy14-BDFS = legacy14e.bdf+legacy14a.bdf+legacy14g.bdf+legacy14l.bdf+legacy14c.bdf+legacy14i.bdf
-Uni2-legacy16-BDFS = u_vga16.bdf+legacy16a.bdf+legacy16e.bdf+legacy16h.bdf+legacy16k.bdf+legacy16b.bdf
+Uni2-legacy16-BDFS = u_vga16_fix.bdf+u_vga16.bdf+legacy16a.bdf+legacy16e.bdf+legacy16h.bdf+legacy16k.bdf+legacy16b.bdf
 Uni2-legacy8-BDFS = legacy8a.bdf+legacy8c.bdf+legacy8i.bdf+legacy8b.bdf+legacy8f.bdf
 
 adddouble = $(subst .bdf,-double.bdf, $(1))
@@ -218,24 +222,44 @@ GOOD_PSF_FONTS = $(filter \
 		%-VGA28x16.psf %-VGA32x16.psf, \
 	$(PSF_FONTS))
 
-GZIPED_GOOD_PSF_FONTS=$(addsuffix .gz, $(GOOD_PSF_FONTS))
-GZIPED_PSF_FONTS=$(addsuffix .gz, $(PSF_FONTS))
-GZIPED_ALL_PSF_FONTS=$(addsuffix .gz, $(ALL_PSF_FONTS))
+GOOD_8_FONTS = $(filter \
+		%-Fixed14.psf %-Fixed16.psf %-Terminus14.psf		\
+                %-Terminus16.psf %-TerminusBold14.psf			\
+                %-TerminusBold16.psf %-TerminusBoldVGA14.psf		\
+                %-TerminusBoldVGA16.psf %-Goha14.psf %-Goha16.psf	\
+                %-GohaClassic14.psf %-GohaClassic16.psf %-VGA8.psf	\
+                %-VGA14.psf %-VGA16.psf, \
+	$(PSF_FONTS))
+
+GZIPPED_GOOD_PSF_FONTS=$(addsuffix .gz, $(GOOD_PSF_FONTS))
+GZIPPED_PSF_FONTS=$(addsuffix .gz, $(PSF_FONTS))
+GZIPPED_ALL_PSF_FONTS=$(addsuffix .gz, $(ALL_PSF_FONTS))
+UUENCODED_GOOD_RAW_FONTS=$(subst .raw,.fnt,$(GOOD_RAW_FONTS))
+UUENCODED_RAW_FONTS=$(subst .raw,.fnt,$(RAW_FONTS))
+UUENCODED_ALL_RAW_FONTS=$(subst .raw,.fnt,$(ALL_RAW_FONTS))
 
 # These fonts can be used only with framebuffer
 FB_PSF_FONTS = $(filter %x6.psf %x10.psf %x11.psf %x12.psf %x14.psf %x16.psf, $(ALL_PSF_FONTS))
-$(FB_PSF_FONTS) : fb_option = --fb
 
 # These fonts can be used both in text-mode and with framebuffer
 NONFB_PSF_FONTS = $(filter-out %x6.psf %x10.psf %x11.psf %x12.psf %x14.psf %x16.psf, $(ALL_PSF_FONTS))
-$(NONFB_PSF_FONTS) : fb_option =
+
+# Filter small charsets (256 symbols) and non-framebuffer fonts
+psf_to_raw = $(subst .psf,.raw, $(filter Armenian% Cyr% Georgian% Greek% Hebrew% Lao% Lat% Thai%, $(filter-out %x6.psf %x10.psf %x11.psf %x12.psf %x14.psf %x16.psf, $(1))))
+
+RAW_FONTS = $(call psf_to_raw, $(PSF_FONTS))
+GOOD_RAW_FONTS = $(call psf_to_raw, $(GOOD_8_FONTS))
+ALL_RAW_FONTS = $(call psf_to_raw, $(ALL_PSF_FONTS))
+
+ALL_FONTS = $(ALL_PSF_FONTS) $(ALL_RAW_FONTS)
 
 doubled_bdfs = $(call adddouble, $(BDFS_TO_DOUBLE))
 
 doubled_bdfs : $(doubled_bdfs)
 
-bdf/%-double.bdf : bdf/%.bdf
-	bdfresize -f 2 -b 1 $< >$@
+bdf/%-double.bdf : source = $(subst -double.bdf,.bdf,$@)
+bdf/%-double.bdf : 
+	bdfresize -f 2 -b 1 $(source) >$@
 
 # Use rm soft.Makefile && make soft.Makefile in order to update soft.Makefile
 include soft.Makefile
@@ -246,66 +270,109 @@ soft.Makefile : $(doubled_bdfs)
 	$(foreach face, $(LEGACY_FACES), \
 		$(addsuffix -$(face).psf, $($(face)-CODESETS)))) \
 	>soft.Makefile
-	echo "BDFS_TO_DOUBLE = " $(wildcard bdf/legacy16?.bdf bdf/legacy14?.bdf bdf/arabic_vga.bdf bdf/u_vga16.bdf) >>soft.Makefile
+	echo "BDFS_TO_DOUBLE = " $(wildcard bdf/legacy16?.bdf bdf/legacy14?.bdf bdf/u_vga16_fix.bdf bdf/u_vga16.bdf) >>soft.Makefile
+	echo -n ENCODING_FONTSET = >>soft.Makefile
+	for a in ../acm/*.acm; do aa=`basename $$a .acm`; for f in fontsets/*.256; do ff=`basename $$f .256`; echo -n ' ' $${aa}_$${ff}; done; done >>soft.Makefile
+	echo >>soft.Makefile
 
 # i.e. Arabic/univga16
 $(ALL_PSF_FONTS) : codeset/face = $(subst -,/,$(@:%.psf=%))
+$(ALL_RAW_FONTS) : codeset/face = $(subst -,/,$(@:%.raw=%))
 # i.e. Arabic/
-$(ALL_PSF_FONTS) : codeset/ = $(dir $(codeset/face))
+$(ALL_FONTS) : codeset/ = $(dir $(codeset/face))
 # i.e. Arabic
-$(ALL_PSF_FONTS) : codeset = $(subst /,-,$(codeset/:%/=%))
+$(ALL_FONTS) : codeset = $(subst /,-,$(codeset/:%/=%))
 # i.e. univga16
-$(ALL_PSF_FONTS) : face = $(strip $(notdir $(codeset/face)))
+$(ALL_FONTS) : face = $(strip $(notdir $(codeset/face)))
 # legacy hack
-$(ALL_PSF_FONTS)  : VGA8-BDFS = $(if $(strip $($(codeset)-legacy8-BDFS)), \
+$(ALL_FONTS)  : VGA8-BDFS = $(if $(strip $($(codeset)-legacy8-BDFS)), \
 			$($(codeset)-legacy8-BDFS),legacy8a.bdf)
-$(ALL_PSF_FONTS)  : VGA10-BDFS = $(if $(strip $($(codeset)-legacy10-BDFS)),\
+$(ALL_FONTS)  : VGA10-BDFS = $(if $(strip $($(codeset)-legacy10-BDFS)),\
 			$($(codeset)-legacy10-BDFS),legacy10a.bdf)
-$(ALL_PSF_FONTS)  : VGA12-BDFS = $(if $(strip $($(codeset)-legacy12-BDFS)),\
+$(ALL_FONTS)  : VGA12-BDFS = $(if $(strip $($(codeset)-legacy12-BDFS)),\
 			$($(codeset)-legacy12-BDFS),legacy12a.bdf)
-$(ALL_PSF_FONTS)  : VGA14-BDFS = $(if $(strip $($(codeset)-legacy14-BDFS)),\
+$(ALL_FONTS)  : VGA14-BDFS = $(if $(strip $($(codeset)-legacy14-BDFS)),\
 			$($(codeset)-legacy14-BDFS),legacy14a.bdf)
-$(ALL_PSF_FONTS)  : VGA16-BDFS = $(if $(strip $($(codeset)-legacy16-BDFS)),\
+$(ALL_FONTS)  : VGA16-BDFS = $(if $(strip $($(codeset)-legacy16-BDFS)),\
 			$($(codeset)-legacy16-BDFS),u_vga16.bdf)
-$(ALL_PSF_FONTS)  : VGA19-BDFS = $(if $(strip $($(codeset)-legacy19-BDFS)),\
+$(ALL_FONTS)  : VGA19-BDFS = $(if $(strip $($(codeset)-legacy19-BDFS)),\
 			$($(codeset)-legacy19-BDFS),legacy19a.bdf)
-$(ALL_PSF_FONTS)  : VGA28x16-BDFS = $(if $(strip $($(codeset)-legacy28x16-BDFS)),\
+$(ALL_FONTS)  : VGA28x16-BDFS = $(if $(strip $($(codeset)-legacy28x16-BDFS)),\
 			$($(codeset)-legacy28x16-BDFS),legacy14a-double.bdf)
-$(ALL_PSF_FONTS)  : VGA32x16-BDFS = $(if $(strip $($(codeset)-legacy32x16-BDFS)),\
+$(ALL_FONTS)  : VGA32x16-BDFS = $(if $(strip $($(codeset)-legacy32x16-BDFS)),\
 			$($(codeset)-legacy32x16-BDFS),u_vga16-double.bdf)
 # i.e. bdf/univga16.bdf
-$(ALL_PSF_FONTS) : bdfs = $(call add_bdf, $($(face)-BDFS))
+$(ALL_FONTS) : bdfs = $(call add_bdf, $($(face)-BDFS))
 # i.e. fontsets/Arabic.512
-$(ALL_PSF_FONTS) : codesetfile = $(wildcard fontsets/$(codeset).*)
+$(ALL_FONTS) : codesetfile = $(wildcard fontsets/$(codeset).*)
 # i.e. 512
-$(ALL_PSF_FONTS) : size = $(subst .,,$(suffix $(codesetfile)))
+$(ALL_FONTS) : size = $(subst .,,$(suffix $(codesetfile)))
 
-$(ALL_PSF_FONTS) : equivalents = $(if $(findstring Uni1, $(codeset)),	 \
+$(ALL_FONTS) : equivalents = $(if $(findstring Uni1, $(codeset)),	 \
 				standard.equivalents+arabic.equivalents, \
 				standard.equivalents)
 
-$(ALL_PSF_FONTS) :
-	./bdf2psf $(fb_option) --log $(@:%.psf=%.log) $(bdfs) \
-		$(equivalents) required.set+$(codesetfile)+:useful.set \
+$(NONFB_PSF_FONTS) :
+	./bdf2psf --log $(@:%.psf=%.log) $(bdfs) \
+		$(equivalents) ascii.set+linux.set+$(codesetfile)+:useful.set \
                 $(size) $@ $(@:%.psf=%.sfm)
+
+$(FB_PSF_FONTS) :
+	./bdf2psf --fb --log $(@:%.psf=%.log) $(bdfs) \
+		$(equivalents) ascii.set+linux.set+$(codesetfile)+:useful.set \
+                $(size) $@ $(@:%.psf=%.sfm)
+
+$(ALL_RAW_FONTS) :
+	./bdf2psf --raw --log $(@:%.raw=%.raw.log) $(bdfs) \
+		$(equivalents) ascii.set+freebsd.set+$(codesetfile)+:useful.set \
+                $(size) $(@:%.raw=%.raw) $(@:%.raw=%.raw.sfm)
+
+%.fnt : %.raw
+	uuencode $< $* >$@
 
 good_psf_fonts : $(GOOD_PSF_FONTS)
 
-gziped_good_psf_fonts : $(GZIPED_GOOD_PSF_FONTS)
+gzipped_good_psf_fonts : $(GZIPPED_GOOD_PSF_FONTS)
+
+uuencoded_good_raw_fonts : $(UUENCODED_GOOD_RAW_FONTS)
+
+
+SCRNMAPS = $(addsuffix .scm, $(ENCODING_FONTSET))
+
+# i.e. ISO-8859-7/Greek
+$(SCRNMAPS) : encoding/fontset = $(subst _,/,$(@:%.scm=%))
+# i.e. ISO-8859-7/
+$(SCRNMAPS) : encoding/ = $(dir $(encoding/fontset))
+# i.e. ISO-8859-7
+$(SCRNMAPS) : encoding = $(encoding/:%/=%)
+# i.e. Greek
+$(SCRNMAPS) : fontset = $(strip $(notdir $(encoding/fontset)))
+
+$(SCRNMAPS) : $(UUENCODED_GOOD_RAW_FONTS) freebsd.set fbsdmap
+	./fbsdmap --binaryscm freebsd.set `ls $(fontset)-*.raw.sfm|{ read x y; echo $$x;}` ../acm/$(encoding).acm| uuencode $(@:%.scm=%) >$@
+
+scrnmaps : $(SCRNMAPS)
 
 # This builds all CODESET-TYPEFASE combinations, even when the font 
 # doesn't define symbols for the particular CODESET
-fullall : $(ALL_PSF_FONTS)
+fullall : $(ALL_FONTS)
+
+terminfo : fbsdmap
+	./fbsdmap --terminfo >$@
+
+termcap : fbsdmap
+	./fbsdmap --termcap >$@
 
 .PHONY: clean
 clean:
 	-rm -f *~
-	-rm -f *.psf *.psf.gz *.sfm *.log
+	-rm -f *.psf *.psf.gz *.sfm *.log *.raw *.fnt *.scm
 	-rm -f fontsets/*~
-	-rm -f bdf/*-double.bdf
+	-rm -f terminfo termcap
 
 .PHONY: maintainer-clean
 maintainer-clean: clean
+	rm $(doubled_bdfs)
+	$(MAKE) $(doubled_bdfs)
 	rm soft.Makefile
 	$(MAKE) soft.Makefile
-	rm -f bdf/*-double.bdf
