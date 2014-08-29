@@ -1,3 +1,271 @@
+console-setup (1.111) unstable; urgency=low
+
+  [ Anton Zinoviev ]
+  * setupcon --setup-dir:
+    - generate commands which do not require gzip in initrd;
+    - simplify the code by more general handling of special shell symbols
+      in command arguments.
+    - do not remove temporary files before the script exits so that the
+      code of --setup-dir is able to use a keymap stored in a termporary file;
+  * Give prefix cached_ to files created in /etc/console-setup.  Remove
+    such files when console-setup or console-setup-mini are removed or
+    purged and /bin/setupcon doesn't exist.  Thanks to Andreas Beckmann
+    and all contributors to the bug report.  Closes: #672160.  Files
+    created by older versions of the package will not be removed.
+  * ckbcomp: change the approximation method for non-defined symbols
+    during the flattening phase.  This is a dangerous change, let's hope
+    I've done it right.  Thanks to Artem Rusanov for the informative bug
+    report, closes: #722566.
+  * bdf2psf: allow omited trailing zero bytes in the BITMAP part of a BDF
+    character definition.  Thanks to Ben Harris for the bug report and the
+    patch, closes: #730430.
+  * setupcon:
+    - improve the output of setupcon --verbose;
+    - run printf '\033%%@' and printf '\033%%G' in background.  I suppose
+      this closes: #678897, #705971.  Thanks to Matteo Croce,
+      John A. Livingston, Alban Browaeys, Stefano Forli,
+      John D. Hendrickson, Sara Darnell, Hendrik Bijlsma and
+      Daniele Di Domizio;
+    - issue warnings about /etc being mounted read-only only if it actually
+      needs to write something there.  Thanks to Michael Tokarev,
+      closes: #691060;
+    - Fix bugs related to setupcon VARIANT.  Thanks to Trent W. Buck,
+      closes: #743476.
+  * Mark all packages as "Multi-Arch: foreign".  Thanks to Guillem Jover
+    and Noel David Torres Taño, closes: #693922.
+  * keyboard.5: add https://wiki.archlinux.org/index.php/X_KeyBoard_extension
+    as another source for further information.
+  * setupcon.1: document the options --save-keyboard and --setup-dir to be
+    used by initrd builders.
+  * Use which instead of type in the config scripts to avoid lintian warnings.
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Fri, 08 Aug 2014 14:21:19 +0300
+
+console-setup (1.110) unstable; urgency=low
+
+  [ Anton Zinoviev ]
+  * Do not remember answer 'no' given to the question 'keep unsupported
+    configuration'.  Thanks to Bernhard R. Link and Steve Cotton,
+    closes: #729321.
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 03 Aug 2014 09:00:30 +0200
+
+console-setup (1.109) unstable; urgency=low
+
+  [ Changwoo Ryu ]
+  * Correct default keymap for South Korea. Closes: #756052
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 26 Jul 2014 08:52:31 +0200
+
+console-setup (1.108) unstable; urgency=low
+
+  [ Updated translations ]
+  * Portuguese (pt.po) by Miguel Figueiredo
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 08 May 2014 09:40:01 +0200
+
+console-setup (1.107) unstable; urgency=low
+
+  [ Updated translations ]
+  * Amharic (am.po) by Tegegne Tefera
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 05 Apr 2014 16:51:59 +0200
+
+console-setup (1.106) unstable; urgency=low
+
+  [ Updated translations ]
+  * Korean (ko.po) by Changwoo Ryu
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 19 Mar 2014 09:07:41 +0100
+
+console-setup (1.105) unstable; urgency=low
+
+  [ Updated translations ]
+  * Belarusian (be.po) by Viktar Siarheichyk
+
+  [ Christian Perrier ]
+  * Explicitly link to GPL-2 document in debian/copyright
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 07 Jan 2014 13:41:32 +0100
+
+console-setup (1.104) unstable; urgency=low
+
+  * Use nepali keymap for Nepali and Tharu by default
+
+  [ Updated translations ]
+  * Bosnian (bs.po) by Amila Valjevčić
+  * Hungarian (hu.po) by Judit Gyimesi
+  * Slovak (sk.po) by Ivan Masár
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 10 Dec 2013 14:49:33 +0100
+
+console-setup (1.103) unstable; urgency=low
+
+  [ Updated translations ]
+  * Galician (gl.po) by Jorge Barreiro
+  * Simplified Chinese (zh_CN.po) by YunQiang Su
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 08 Nov 2013 22:14:09 +0100
+
+console-setup (1.102) unstable; urgency=low
+
+  [ Updated translations ]
+  * Danish (da.po) by Joe Hansen
+  * Spanish (es.po) by Javier Fernández-Sanguino
+  * Latvian (lv.po) by Rūdolfs Mazurs
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 13 Oct 2013 14:57:17 +0200
+
+console-setup (1.101) unstable; urgency=low
+
+  [ Updated translations ]
+  * Arabic (ar.po) by Ossama Khayat
+  * Bulgarian (bg.po) by Damyan Ivanov
+  * German (de.po) by Holger Wansing
+  * Greek, Modern (1453-) (el.po) by galaxico
+  * Esperanto (eo.po) by Felipe Castro
+  * French (fr.po) by Christian Perrier
+  * Croatian (hr.po) by Tomislav Krznar
+  * Italian (it.po) by Milo Casagrande
+  * Japanese (ja.po) by Kenshi Muto
+  * Kazakh (kk.po) by Baurzhan Muftakhidinov
+  * Kannada (kn.po) by Prabodh C P (FSMK Localisation Team)
+  * Malayalam (ml.po) by Anish Sheela
+  * Marathi (mr.po) by sampada
+  * Bokmål, Norwegian (nb.po) by Hans Fredrik Nordhaug
+  * Polish (pl.po) by Michał Kułach
+  * Tajik (tg.po) by Victor Ibragimov
+  * Thai (th.po) by Theppitak Karoonboonyanan
+  * Turkish (tr.po) by Mert Dirik
+  * Uyghur (ug.po) by Abduqadir Abliz
+  * Ukrainian (uk.po) by Yuri Chornoivan
+  * Traditional Chinese (zh_TW.po) by Yao Wei (魏銘廷)
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 05 Oct 2013 19:37:09 +0200
+
+console-setup (1.100) unstable; urgency=low
+
+  [ Christian Perrier ]
+  * Add Tibetan keyboard layout for D-I. Closes: #667056
+
+  [ Samuel Thibault ]
+  * Make Tibetan keyboard understood as non-latin layout.
+
+  [ Christian Perrier ]
+  * Add Tajik as keymap choice for D-I
+
+  [ Updated translations ]
+  * Japanese (ja.po) by Kenshi Muto
+  * Slovak (sk.po) by Ivan Masár
+  * Tajik (tg.po) by Victor Ibragimov
+  * Thai (th.po) by Theppitak Karoonboonyanan
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 19 Sep 2013 07:00:34 +0200
+
+console-setup (1.99) unstable; urgency=low
+
+  [ Updated translations ]
+  * Tajik (tg.po) by Victor Ibragimov
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 14 Sep 2013 15:01:43 +0200
+
+console-setup (1.98) unstable; urgency=low
+
+  * Re-upload with more informative changelog. The change below was
+    added in 1.97. Closes: #722069
+
+  [ Updated translations ]
+  * Tajik (tg.po) by Victor Ibragimov
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 08 Sep 2013 15:39:08 +0200
+
+console-setup (1.97) unstable; urgency=low
+
+  * -
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 06 Sep 2013 22:38:19 +0200
+
+console-setup (1.96) unstable; urgency=low
+
+  [ Updated translations ]
+  * Tajik (tg.po) by Victor Ibragimov
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 06 Sep 2013 18:49:55 +0200
+
+console-setup (1.95) unstable; urgency=low
+
+  * Set default keymap for Tajik
+
+  [ Updated translations ]
+  * Tajik (tg.po) by Victor Ibragimov
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 16 Aug 2013 11:03:49 +0200
+
+console-setup (1.94) unstable; urgency=low
+
+  [ Dmitrijs Ledkovs ]
+  * Set debian source format to '3.0 (native)'.
+  * Bump debhelper compat level to 9.
+  * Set Vcs-* to canonical format.
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 13 Jul 2013 12:24:32 +0200
+
+console-setup (1.93) unstable; urgency=low
+
+  [ Samuel Thibault ]
+  * Do not fail keyboard configuration on hurd console not running.
+
+  [ Updated translations ]
+  * Croatian (hr.po) by Tomislav Krznar
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 12 May 2013 19:17:40 +0200
+
+console-setup (1.92) unstable; urgency=low
+
+  [ Anton Zinoviev ]
+  * keyboard-configuration.config: when in d-i properly update $STATE
+    during the missing variant question.  This was causing an endless
+    loop.  Thanks to Brian Potkin, closes: #697449.
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 30 Mar 2013 11:32:22 +0100
+
+console-setup (1.91) unstable; urgency=low
+
+  * A wrong command in keyboard-configuration.config was breaking the
+    configuration of almost all non-Latin languages.  Thanks to Theppitak
+    Karoonboonyanan, closes: #697255.  Due to the way console-setup works,
+    this version will fix automatically the damage caused by the previous
+    version in /etc/default/keyboard.
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Thu, 03 Jan 2013 19:53:08 +0200
+
+console-setup (1.90) unstable; urgency=low
+
+  [ Cyril Brulebois ]
+  * Keyboard/xmlreader: Register the hwList tag as an ignored one, just
+    like vendor is ignored already, which lets us get rid of a spurious
+    warning in the build log (thanks, Holger & jenkins). Closes: #696754.
+
+  [ Anton Zinoviev ]
+  * Proofreading of debian/keyboard-configuration.config.  Make the file a
+    little more readable with more comments.  Some changes in the logic.
+    This probably fixes the important part of #693485.  Thanks to Bob Bib.
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Tue, 01 Jan 2013 19:27:29 +0200
+
+console-setup (1.89) unstable; urgency=low
+
+  * Team upload.
+
+  [ Updated translations ]
+  * Marathi (mr.po) typo.
+
+  * keyboard-configuration.config: Add support for preseeding xkb-keymap.
+    Closes: Bug#696188.
+
+ -- Samuel Thibault <sthibault@debian.org>  Wed, 26 Dec 2012 00:37:02 +0100
+
 console-setup (1.88) unstable; urgency=low
 
   [ Updated translations ]

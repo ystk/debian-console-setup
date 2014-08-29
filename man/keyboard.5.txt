@@ -24,6 +24,7 @@ DESCRIPTION
 
        Other possible readings are:
 
+              https://wiki.archlinux.org/index.php/X_KeyBoard_extension
               http://pascal.tsu.ru/en/xkb/
               http://www.charvolant.org/~doug/xkb/
 

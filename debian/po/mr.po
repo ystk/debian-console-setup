@@ -21,12 +21,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-04-22 20:20+0530\n"
+"POT-Creation-Date: 2013-09-19 07:00+0200\n"
+"PO-Revision-Date: 2013-10-01 20:48+0530\n"
 "Last-Translator: sampada <sampadanakhare@gmail.com>\n"
 "Language-Team: Marathi, janabhaaratii, C-DAC, Mumbai, India "
 "<janabhaaratii@cdacmumbai.in>\n"
-"Language: \n"
+"Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -206,7 +206,7 @@ msgstr "समर्थन देण्याचा चिन्ह संच:"
 #: ../console-setup.templates:5002
 msgid ""
 "Please choose the character set that should be supported by the console font."
-msgstr "कृपया या कन्सोल फॉंटने समर्थन देण्याचा चिन्ह संच निवडा."
+msgstr "कृपया या कन्सोल फॉंटने समर्थन देण्याचा चिन्ह संच निवडा."
 
 #. Type: select
 #. Description
@@ -1289,6 +1289,12 @@ msgstr "स्विस जर्मन"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Tajik"
+msgstr "ताजिक"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Tamil"
 msgstr "तमिळ"
 
@@ -1303,6 +1309,12 @@ msgstr "तेलुगू"
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
 msgstr "थाई"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Tibetan"
+msgstr "तिबेटियन"
 
 #. Type: select
 #. Choices

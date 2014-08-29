@@ -30,7 +30,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_hi\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2012-02-23 17:33+0000\n"
+"POT-Creation-Date: 2013-09-19 07:00+0200\n"
 "PO-Revision-Date: 2012-02-23 22:25-0600\n"
 "Last-Translator: Kumar Appaiah\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -1324,6 +1324,12 @@ msgstr "स्विस जर्मनी"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Tajik"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Tamil"
 msgstr "तमिल"
 
@@ -1338,6 +1344,12 @@ msgstr "तेलेगु"
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
 msgstr "थाई"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Tibetan"
+msgstr ""
 
 # console-keymaps-acorn, Russian
 #. Type: select

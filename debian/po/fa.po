@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fa\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2012-02-23 17:33+0000\n"
+"POT-Creation-Date: 2013-09-19 07:00+0200\n"
 "PO-Revision-Date: 2012-03-03 13:05+0330\n"
 "Last-Translator: Behrad Eslamifar <behrad_es@yahoo.com>\n"
 "Language-Team: Debian-l10n-persian <debian-l10n-persian@lists.debian.org>\n"
@@ -1297,6 +1297,12 @@ msgstr "سوييس الماني"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Tajik"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Tamil"
 msgstr "تامیلی"
 
@@ -1311,6 +1317,12 @@ msgstr "تلوگویی"
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
 msgstr "تايلندي"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Tibetan"
+msgstr ""
 
 #. Type: select
 #. Choices

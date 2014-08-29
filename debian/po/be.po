@@ -16,13 +16,14 @@
 # Alastair McKinstry <mckinstry@debian.org>, 2004.
 # Alexander Nyakhaychyk <nyakhaychyk@gmail.com>, 2009.
 # Ihar Hrachyshka <ihar.hrachyshka@gmail.com>, 2007, 2010.
+# Viktar Siarheichyk <viсs@eq.by>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: be\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-03-04 01:58+0300\n"
-"Last-Translator: Viktar Siarheichyk <vics@eq.by>\n"
+"POT-Creation-Date: 2013-09-19 07:00+0200\n"
+"PO-Revision-Date: 2014-01-04 14:31+0300\n"
+"Last-Translator: Viktar Siarheichyk <viсs@eq.by>\n"
 "Language-Team: Belarusian (Official spelling) <debian-l10n-belarusian@lists."
 "debian.org>\n"
 "Language: be\n"
@@ -1298,6 +1299,12 @@ msgstr "Швейцарская нямецкая"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Tajik"
+msgstr "Таджыкская"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Tamil"
 msgstr "Тамільская"
 
@@ -1312,6 +1319,12 @@ msgstr "Тэлугу"
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
 msgstr "Тайская"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Tibetan"
+msgstr "Тыбецкая"
 
 #. Type: select
 #. Choices

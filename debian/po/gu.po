@@ -10,7 +10,7 @@
 # Debian Installer translators, please read the D-I i18n documentation
 # in doc/i18n/i18n.txt
 # Contributor:
-# Kartik Mistry <kartik.mistry@gmail.com>, 2006-2011
+# Kartik Mistry <kartik.mistry@gmail.com>, 2006-2013
 #
 #
 # Translations from iso-codes:
@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: d-i\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2012-02-23 17:33+0000\n"
+"POT-Creation-Date: 2013-09-19 07:00+0200\n"
 "PO-Revision-Date: 2008-08-07 11:42+0530\n"
 "Last-Translator: Kartik Mistry <kartik.mistry@gmail.com>\n"
 "Language-Team: Gujarati <team@utkarsh.org>\n"
@@ -1291,6 +1291,12 @@ msgstr "સ્વીસ જર્મન"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Tajik"
+msgstr "તાજિક"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Tamil"
 msgstr "તમિલ"
 
@@ -1305,6 +1311,12 @@ msgstr "તેલુગુ"
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
 msgstr "થાઇ"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Tibetan"
+msgstr "તિબેટાન"
 
 #. Type: select
 #. Choices

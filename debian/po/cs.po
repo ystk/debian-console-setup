@@ -18,8 +18,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2012-02-23 17:33+0000\n"
-"PO-Revision-Date: 2012-02-25 11:00+0100\n"
+"POT-Creation-Date: 2013-09-19 07:00+0200\n"
+"PO-Revision-Date: 2013-10-05 17:48+0200\n"
 "Last-Translator:  Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team:  Czech <provoz@debian.cz>\n"
 "Language: cs\n"
@@ -1296,6 +1296,12 @@ msgstr "švýcarská - němčina"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Tajik"
+msgstr "tádžická"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Tamil"
 msgstr "tamilská"
 
@@ -1310,6 +1316,12 @@ msgstr "telugu"
 #: ../keyboard-configuration.templates:16001
 msgid "Thai"
 msgstr "thajská"
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
+msgid "Tibetan"
+msgstr "tibetská"
 
 #. Type: select
 #. Choices
