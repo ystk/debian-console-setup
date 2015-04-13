@@ -1,3 +1,98 @@
+console-setup (1.120) unstable; urgency=low
+
+  [ Updated translations ]
+  * Spanish (es.po) by Javier Fernández-Sanguino
+  * Galician (gl.po) by Jorge Barreiro
+  * Russian (ru.po) by Yuri Kozlov
+  * Romanian (ro.po) by Bradut Boghita
+
+ -- Christian Perrier <bubulle@debian.org>  Fri, 27 Mar 2015 07:25:31 +0100
+
+console-setup (1.119) unstable; urgency=low
+
+  [ Updated translations ]
+  * Danish (da.po) by Joe Hansen
+  * Bokmål, Norwegian (nb.po) by Hans Fredrik Nordhaug
+  * Polish (pl.po) by Michał Kułach
+  * Turkish (tr.po) by Mert Dirik
+  * Ukrainian (uk.po) by Anton Gladky
+  * Vietnamese (vi.po) by Hai-Nam Nguyen
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 09 Mar 2015 08:57:14 +0100
+
+console-setup (1.118) unstable; urgency=low
+
+  [ Updated translations ]
+  * Czech (cs.po) by Miroslav Kure
+  * German (de.po) by Holger Wansing
+  * Italian (it.po) by Milo Casagrande
+  * Korean (ko.po) by Changwoo Ryu
+  * Thai (th.po) by Theppitak Karoonboonyanan
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 03 Mar 2015 08:25:24 +0100
+
+console-setup (1.117) unstable; urgency=medium
+
+  [ Samuel Thibault ]
+  * Fix default South Korea keymap in d-i, closes: #777740.
+  * Add Burmese and Philipines choices.
+  * Set default layout for Myanmar (Burmese), Philipines, and Marathi
+    (Devanagari).
+  * Fix default Devanagari layout: it is already the default, there is
+    actually no "deva" variant advertised in XML.
+  * Fix Uygur variant: it is called ug, not uig.
+  * Remove us,deva transformation, it never happens.
+  * Add us,cn transformation.
+
+  [ Updated translations ]
+  * French (fr.po) by Christian Perrier
+  * Japanese (ja.po) by Kenshi Muto
+  * Portuguese (pt.po) by Miguel Figueiredo
+  * Slovak (sk.po) by Ivan Masár
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 22 Feb 2015 07:26:03 +0100
+
+console-setup (1.116) unstable; urgency=medium
+
+  * Re-upload a clean(er) source package.
+
+ -- Cyril Brulebois <kibi@debian.org>  Tue, 25 Nov 2014 10:58:20 +0100
+
+console-setup (1.115) unstable; urgency=medium
+
+  [ Anton Zinoviev ]
+  * ckbcomp: define missing X keysyms.  Thanks to Martin-Éric Racine,
+    closes: #762399.
+
+ -- Anton Zinoviev <zinoviev@debian.org>  Sun, 09 Nov 2014 21:58:45 +0200
+
+console-setup (1.114) unstable; urgency=low
+
+  [ Updated translations ]
+  * Slovenian (sl.po) by Vanja Cvelbar
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 25 Oct 2014 10:43:47 +0200
+
+console-setup (1.113) unstable; urgency=low
+
+  [ Updated translations ]
+  * Turkish (tr.po) by Mert Dirik
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 20 Sep 2014 09:51:03 +0200
+
+console-setup (1.112) unstable; urgency=low
+
+  [ Anton Zinoviev ]
+  * setupcpn --setup-dir: process arguments differently to leave
+    backslashes alone.  Thanks to Giorgio Marinelli, closes: #759546.
+
+  [ Updated translations ]
+  * Danish (da.po) by Joe Hansen
+  * Estonian (et.po) by Mattias Põldaru
+  * Panjabi (pa.po) by A S Alam
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 06 Sep 2014 11:32:12 +0200
+
 console-setup (1.111) unstable; urgency=low
 
   [ Anton Zinoviev ]

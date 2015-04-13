@@ -20,13 +20,13 @@
 # Amanpreet Singh Brar <aalam@users.sf.net>, 2008.
 # Amanpreet Singh Alam <aalam@users.sf.net>, 2008, 2009.
 # Amanpreet Singh Alam[ਆਲਮ] <amanpreetalam@yahoo.com>, 2005.
-# A S Alam <aalam@users.sf.net>, 2009, 2012.
+# A S Alam <aalam@users.sf.net>, 2009, 2012, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: pa\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
-"POT-Creation-Date: 2013-09-19 07:00+0200\n"
-"PO-Revision-Date: 2012-05-06 12:14+0530\n"
+"POT-Creation-Date: 2015-02-19 22:00+0000\n"
+"PO-Revision-Date: 2014-08-21 21:30-0500\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi/Panjabi <punjabi-users@lists.sf.net>\n"
 "Language: pa\n"
@@ -936,6 +936,12 @@ msgstr "ਬੁਲਗਾਰੀਅਨ (ਫਨੋਟਿਕ ਲੇਆਉਟ)"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Burmese"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Canadian French"
 msgstr "ਕਨੇਡੀਅਨ ਫ੍ਰੈਂਚ"
 
@@ -1200,6 +1206,12 @@ msgstr "ਫਾਰਸੀ"
 #. Type: select
 #. Choices
 #: ../keyboard-configuration.templates:16001
+msgid "Philippines"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../keyboard-configuration.templates:16001
 msgid "Polish"
 msgstr "ਪੋਲਿਸ਼"
 
@@ -1285,7 +1297,7 @@ msgstr "ਸਵਿਸ ਜਰਮਨ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tajik"
-msgstr ""
+msgstr "ਤਾਜਿਕ"
 
 #. Type: select
 #. Choices
@@ -1309,7 +1321,7 @@ msgstr "# ਥਾਈ"
 #. Choices
 #: ../keyboard-configuration.templates:16001
 msgid "Tibetan"
-msgstr ""
+msgstr "ਤਿੱਬਤੀ"
 
 #. Type: select
 #. Choices
